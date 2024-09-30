@@ -33,8 +33,10 @@ function HomePage() {
           </Link>
         </div>
         <div className="grid-item">
-          <FaBook size={50} />
-          <p>Educación</p>
+          <Link to="/education">
+            <FaBook size={50} />
+            <p>Educación</p>
+          </Link>
         </div>
         <div className="grid-item">
           <FaBriefcase size={50} />

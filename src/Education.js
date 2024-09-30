@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logoSJM from './images/logoSJM.svg'; // Importa la imagen directamente
 
 
-function Documents() {
+function Education() {
   return (
     <div className="container">
       <header className="header">
@@ -18,12 +18,12 @@ function Documents() {
       </header>
 
       <div className="buttons-container">
-        <button className="option-btn">Puntos de Atencion</button>
-        <button className="option-btn">Residencia Temporaria o Permanente</button>
-        <button className="option-btn">Certificado de Residencia Precaria</button>
-        <button className="option-btn">Documento Nacional de Identidad (DNI)</button>
-        <button className="option-btn">Trámite de CUIL o CUIT</button>
-        <button className="option-btn">Convalidación de Títulos y Estudios</button>
+        <button className="option-btn">Acceso al Sistema Educativo</button>
+        <button className="option-btn">Registro y Documentación</button>
+        <button className="option-btn">Programas de Apoyo</button>
+        <button className="option-btn">Educación de Adultos</button>
+        <button className="option-btn">Educación Superior</button>
+        <button className="option-btn">Información Adicional</button>
       </div>
 
       <footer className="footer">
@@ -34,4 +34,4 @@ function Documents() {
   );
 }
 
-export default Documents;
+export default Education;
