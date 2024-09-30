@@ -2,53 +2,22 @@ import React from 'react';
 import './App.css';
 import { FaUser, FaBriefcase, FaBook, FaHeartbeat, FaGraduationCap, FaHandsHelping, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Documents from './Documents';
+import HomePage from './HomePage'; // Crea un componente separado para el contenido principal (Página de Inicio)
 
 function App() {
   return (
-    <div className="container">
-      <header className="header">
-        <img src="images/logoSJM.svg" alt="Logo" className="logo" />
-        <h1>integrAR</h1>
-        <button className="menu-btn">
-          <span className="menu-icon">&#9776;</span>
-        </button>
-      </header>
-
-      <div className="grid-container">
-        <div className="grid-item">
-          <FaUser size={50} />
-          <p>Trámites y Documentos</p>
-        </div>
-        <div className="grid-item">
-          <FaHeartbeat size={50} />
-          <p>Salud</p>
-        </div>
-        <div className="grid-item">
-          <FaBook size={50} />
-          <p>Educación</p>
-        </div>
-        <div className="grid-item">
-          <FaBriefcase size={50} />
-          <p>Busco Trabajo</p>
-        </div>
-        <div className="grid-item">
-          <FaHandsHelping size={50} />
-          <p>Asistencia</p>
-        </div>
-        <div className="grid-item">
-          <FaGraduationCap size={50} />
-          <p>Capacitaciones</p>
-        </div>
-      </div>
-
-      <footer className="footer">
-        <p><FaPhoneAlt /> 1128478764</p>
-        <p><FaEnvelope /> contacto@sjmargentina.org</p>
-        <BsWhatsapp size={30} className="whatsapp-icon" />
-      </footer>
-    </div>
+    <Router>
+      <Routes>
+        {/* Ruta para la página principal (home) */}
+        <Route path="/" element={<HomePage />} />
+        
+        {/* Ruta para la página de documentos */}
+        <Route path="/documents" element={<Documents />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
