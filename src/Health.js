@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logoSJM from './images/logoSJM.svg'; // Importa la imagen directamente
 
 
-function Documents() {
+function Health() {
   return (
     <div className="container">
       <header className="header">
@@ -18,12 +18,12 @@ function Documents() {
       </header>
 
       <div className="buttons-container">
-        <button className="option-btn">Acceso al Sistema Educativo</button>
-        <button className="option-btn">Registro y Documentación</button>
-        <button className="option-btn">Programas de Apoyo</button>
-        <button className="option-btn">Educación de Adultos</button>
-        <button className="option-btn">Educación Superior</button>
-        <button className="option-btn">Información Adicional</button>
+        <button className="option-btn">Acceso al Sistema de Salud Público</button>
+        <button className="option-btn">Cobertura de Salud</button>
+        <button className="option-btn">Centros de Atención 24hs</button>
+        <button className="option-btn">¿Cómo sacar una obra social?</button>
+        <button className="option-btn">Atención Médica para Niños</button>
+        <button className="option-btn">Emergencias Médicas</button>
       </div>
 
       <footer className="footer">
@@ -34,4 +34,4 @@ function Documents() {
   );
 }
 
-export default Documents;
+export default Health;

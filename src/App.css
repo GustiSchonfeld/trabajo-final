@@ -14,10 +14,12 @@
   padding: 10px;
   background-color: #003366;
   color: white;
+
 }
 
 .logo {
   height: 40px;
+  margin-right: 10px;
 }
 
 .menu-btn {

@@ -5,6 +5,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Documents from './Documents';
 import HomePage from './HomePage'; // Crea un componente separado para el contenido principal (Página de Inicio)
+import Health from './Health';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         
         {/* Ruta para la página de documentos */}
         <Route path="/documents" element={<Documents />} />
+
+        {/* Ruta para la página de salud */}
+        <Route path="/health" element={<Health />} />
       </Routes>
     </Router>
   );

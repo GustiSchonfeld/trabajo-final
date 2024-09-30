@@ -2,13 +2,15 @@ import React from 'react';
 import { FaUser, FaBriefcase, FaBook, FaHeartbeat, FaGraduationCap, FaHandsHelping, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import logoSJM from './images/logoSJM.svg'; // Importa la imagen directamente
+
 
 function HomePage() {
   return (
     <div className="container">
       <header className="header">
         <Link to="/">
-            <img src="src/images/logoSJM.svg" alt="Logo" className="logo" />
+            <img src={logoSJM} alt="Logo" className="logo" />
         </Link>
         <h1>integrAR</h1>
         <button className="menu-btn">
@@ -25,8 +27,10 @@ function HomePage() {
           </Link>
         </div>
         <div className="grid-item">
-          <FaHeartbeat size={50} />
-          <p>Salud</p>
+          <Link to="/health">
+            <FaHeartbeat size={50} />
+            <p>Salud</p>
+          </Link>
         </div>
         <div className="grid-item">
           <FaBook size={50} />
