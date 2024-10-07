@@ -8,6 +8,18 @@
   color: white;
 }
 
+.menu-header-btn {
+  background-color: #668cb1;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .logo-text-container {
   display: flex;
   justify-content: center;
@@ -304,6 +316,7 @@ h2 {
   color: white;
   width: 100%;
   padding: 10px;
+  z-index: 1000;
 }
 
 .whatsapp-icon {

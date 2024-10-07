@@ -34,6 +34,11 @@ function Header() {
         <div className="menu-overlay">
           <button className="close-btn" onClick={toggleMenu}>&times;</button>
           <div className="menu-content">
+            {/* Botones de Iniciar Sesión y Registrarse */}
+            <div className="menu-header-buttons">
+              <button className="menu-header-btn">Iniciar Sesión</button>
+              <button className="menu-header-btn">Registrarse</button>
+            </div>
             <Link to="/documents" className="menu-option" onClick={toggleMenu}>
               <FaUser size={20} /> Trámites y Documentos
             </Link>
