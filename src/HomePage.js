@@ -1,23 +1,20 @@
-import React from 'react';
-import { FaUser, FaBriefcase, FaBook, FaHeartbeat, FaGraduationCap, FaHandsHelping, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-import { BsWhatsapp } from 'react-icons/bs';
+import React, { useState } from 'react';
+import { FaUser, FaBriefcase, FaBook, FaHeartbeat, FaGraduationCap, FaHandsHelping } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logoSJM from './images/logoSJM.svg'; // Importa la imagen directamente
-
+import Header  from './components/Header';
+import Footer from './components/Footer';
 
 function HomePage() {
+  // Estado para controlar si el menú está abierto o cerrado
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Función para alternar la visibilidad del menú
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <div className="container">
-      <header className="header">
-        <Link to="/">
-            <img src={logoSJM} alt="Logo" className="logo" />
-        </Link>
-        <h1>integrAR</h1>
-        <button className="menu-btn">
-          <span className="menu-icon">&#9776;</span>
-        </button>
-      </header>
-
+      <Header />
       <div className="grid-container">
         <div className="grid-item">
           {/* Link para ir a la página de Documents */}
@@ -52,11 +49,7 @@ function HomePage() {
         </div>
       </div>
 
-      <footer className="footer">
-        <p><FaPhoneAlt /> 1128478764</p>
-        <p><FaEnvelope /> contacto@sjmargentina.org</p>
-        <BsWhatsapp size={30} className="whatsapp-icon" />
-      </footer>
+      <Footer />
     </div>
   );
 }

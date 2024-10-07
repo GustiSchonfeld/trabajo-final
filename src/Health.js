@@ -2,20 +2,14 @@ import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import logoSJM from './images/logoSJM.svg'; // Importa la imagen directamente
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 function Health() {
   return (
     <div className="container">
-      <header className="header">
-        <Link to="/">
-          <img src={logoSJM} alt="Logo" className="logo" />
-        </Link>
-        <h1>integrAR</h1>
-        <button className="menu-btn">
-          <span className="menu-icon">&#9776;</span>
-        </button>
-      </header>
+      <Header />
 
       <div className="buttons-container">
         <button className="option-btn">Acceso al Sistema de Salud Público</button>
@@ -26,10 +20,7 @@ function Health() {
         <button className="option-btn">Emergencias Médicas</button>
       </div>
 
-      <footer className="footer">
-        <p>1128478764</p>
-        <p>contacto@sjmargentina.org</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

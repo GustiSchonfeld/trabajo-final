@@ -1,4 +1,162 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Para poner el logo/texto en el centro y el menú a la derecha */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+}
+
+.logo-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Para centrar el logo y el texto */
+}
+
+.logo-text-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
+.menu-overlay {
+  position: fixed; /* Fijo para que cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro con transparencia */
+  color: white;
+  z-index: 1000; /* Para asegurarnos de que esté encima de todo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el ícono y el texto */
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
 /* Estructura de la pantalla principal */
+.header {
+  display: flex;
+  justify-content: space-between; /* Para poner el logo/texto en el centro y el menú a la derecha */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+}
+
+.logo-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Para centrar el logo y el texto */
+}
+
+.logo-text-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
+.menu-content {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.menu-option {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: none;
+  color: black;
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  background-color: #f0f0f0;
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -22,7 +180,15 @@
   margin-right: 10px;
 }
 
+.logo-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu-btn {
+  position: absolute;
+  right: 10px;
   background-color: transparent;
   border: none;
   color: white;
