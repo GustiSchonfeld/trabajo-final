@@ -91,7 +91,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 h2 {
@@ -133,7 +133,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 .capacitacion-option {
@@ -317,6 +317,7 @@ h2 {
   gap: 10px;
   width: 100%;
   max-width: 400px;
+  padding: 10px;
 }
 
 .option-btn {
