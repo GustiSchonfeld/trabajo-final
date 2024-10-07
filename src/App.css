@@ -86,6 +86,78 @@
   cursor: pointer;
 }
 
+.assistance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.consultas-form {
+  background-color: #4d7298;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.consultas-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.consultas-form select {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.consultar-btn {
+  padding: 10px;
+  background-color: #002f87;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.capacitaciones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.capacitacion-option {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.capacitacion-img {
+  width: 300px; /* Ajusta según el tamaño necesario */
+  height: auto;
+  border-radius: 10px;
+}
+
+.capacitacion-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 
 /* Estructura de la pantalla principal */

@@ -7,6 +7,8 @@ import Documents from './Documents';
 import HomePage from './HomePage'; // Crea un componente separado para el contenido principal (Página de Inicio)
 import Health from './Health';
 import Education from './Education';
+import Assistance from './Assistance';
+import Training from './Training';
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
 
         {/* Ruta para la página de educación */}
         <Route path="/education" element={<Education />} />
+
+        {/* Ruta para la página de asistencia */}
+        <Route path="/assistance" element={<Assistance />} />
+
+        {/* Ruta para la página de capacitaciones */}
+        <Route path="/training" element={<Training />} />
 
       </Routes>
     </Router>

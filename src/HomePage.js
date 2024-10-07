@@ -40,12 +40,16 @@ function HomePage() {
           <p>Busco Trabajo</p>
         </div>
         <div className="grid-item">
+          <Link to="/assistance">
           <FaHandsHelping size={50} />
           <p>Asistencia</p>
+          </Link>
         </div>
         <div className="grid-item">
+          <Link to="/training">
           <FaGraduationCap size={50} />
           <p>Capacitaciones</p>
+          </Link>
         </div>
       </div>
 

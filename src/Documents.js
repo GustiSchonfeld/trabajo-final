@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
-import logoSJM from './images/logoSJM.svg'; // Importa la imagen directamente
 import Header from './components/Header';
 import Footer from './components/Footer';
 

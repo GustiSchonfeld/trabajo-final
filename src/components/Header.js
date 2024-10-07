@@ -52,6 +52,8 @@ function Header() {
             <Link to="/training" className="menu-option" onClick={toggleMenu}>
               <FaGraduationCap size={20} /> Capacitaciones
             </Link>
+            
+
           </div>
         </div>
       )}
