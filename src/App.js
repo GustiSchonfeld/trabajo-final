@@ -9,6 +9,8 @@ import Health from './Health';
 import Education from './Education';
 import Assistance from './Assistance';
 import Training from './Training';
+import LoginPage from './LoginPage';
+import RegisterPage from './RegisterPage';
 
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
 
         {/* Ruta para la página de capacitaciones */}
         <Route path="/training" element={<Training />} />
+
+        {/* Ruta para la página de login */}
+        <Route path="/loginpage" element={<LoginPage />} />
+
+        {/* Ruta para la página de registro */}
+        <Route path="/registerpage" element={<RegisterPage />} />
 
       </Routes>
     </Router>

@@ -36,8 +36,12 @@ function Header() {
           <div className="menu-content">
             {/* Botones de Iniciar Sesión y Registrarse */}
             <div className="menu-header-buttons">
-              <button className="menu-header-btn">Iniciar Sesión</button>
-              <button className="menu-header-btn">Registrarse</button>
+              <Link to="/loginpage" className="menu-header-btn" onClick={toggleMenu}>
+                Iniciar Sesión
+              </Link>
+              <Link to="/registerpage" className="menu-header-btn" onClick={toggleMenu}>
+                Registrarse
+              </Link>
             </div>
             <Link to="/documents" className="menu-option" onClick={toggleMenu}>
               <FaUser size={20} /> Trámites y Documentos
@@ -57,7 +61,12 @@ function Header() {
             <Link to="/training" className="menu-option" onClick={toggleMenu}>
               <FaGraduationCap size={20} /> Capacitaciones
             </Link>
-            
+            <Link to="/loginpage" className="menu-option" onClick={toggleMenu}>
+              <FaUser size={20} /> Iniciar Sesión
+            </Link>
+            <Link to="/registerpage" className="menu-option" onClick={toggleMenu}>
+              <FaUser size={20} /> Registrarse
+            </Link>
 
           </div>
         </div>
